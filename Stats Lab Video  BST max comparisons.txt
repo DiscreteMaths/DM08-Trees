@@ -1,0 +1,21 @@
+\begin{frame}
+\frametitle{Binary Search Trees}
+
+
+\[ h = \lceil \mbox{log}_e(N+1) \rceil \]
+
+\end{frame}
+%------------------------------------------%
+\begin{frame}
+
+Suppose N =100,000
+
+We first compute $\mbox{log}_e(N+1)$. 
+
+\[ \mbox{log}_e(100,001) = 11.51294 \]
+
+( Another way of writing $\mbox{log}_e$ is $ln$. When using a calculator, we would use the \texttt{\textbf{{ln}} button to perfom this calculation)
+
+
+
+\end{frame}
