@@ -1,0 +1,97 @@
+% %- https://www.tutorialspoint.com/graph_theory/index.htm
+
+
+
+
+\section{Tree}
+A connected acyclic graph is called a tree. In other words, a connected graph with no cycles is called a tree.
+
+The edges of a tree are known as branches. Elements of trees are called their nodes. The nodes without child nodes are called leaf nodes.
+
+A tree with ‘n’ vertices has ‘n-1’ edges. If it has one more edge extra than ‘n-1’, then the extra edge should obviously has to pair up with two vertices which leads to form a cycle. Then, it becomes a cyclic graph which is a violation for the tree graph.
+
+Example 1
+The graph shown here is a tree because it has no cycles and it is connected. It has four vertices and three edges, i.e., for ‘n’ vertices ‘n-1’ edges as mentioned in the definition.
+
+Tree
+Note − Every tree has at least two vertices of degree one.
+
+Example 2
+Tree 1
+In the above example, the vertices ‘a’ and ‘d’ has degree one. And the other two vertices ‘b’ and ‘c’ has degree two. This is possible because for not forming a cycle, there should be at least two single edges anywhere in the graph. It is nothing but two edges with a degree of one.
+
+Forest
+A disconnected acyclic graph is called a forest. In other words, a disjoint collection of trees is called a forest.
+
+Example
+The following graph looks like two sub-graphs; but it is a single disconnected graph. There are no cycles in this graph. Hence, clearly it is a forest.
+
+Forest
+Spanning Trees
+Let G be a connected graph, then the sub-graph H of G is called a spanning tree of G if −
+
+H is a tree
+H contains all vertices of G.
+A spanning tree T of an undirected graph G is a subgraph that includes all of the vertices of G.
+
+Example
+Spanning Trees
+In the above example, G is a connected graph and H is a sub-graph of G.
+
+Clearly, the graph H has no cycles, it is a tree with six edges which is one less than the total number of vertices. Hence H is the Spanning tree of G.
+
+\subsection{Circuit Rank}
+Let ‘G’ be a connected graph with ‘n’ vertices and ‘m’ edges. A spanning tree ‘T’ of G contains (n-1) edges.
+
+Therefore, the number of edges you need to delete from ‘G’ in order to get a spanning tree = m-(n-1), which is called the circuit rank of G.
+
+This formula is true, because in a spanning tree you need to have ‘n-1’ edges. Out of ‘m’ edges, you need to keep ‘n–1’ edges in the graph.
+
+Hence, deleting ‘n–1’ edges from ‘m’ gives the edges to be removed from the graph in order to get a spanning tree, which should not form a cycle.
+
+Example
+Take a look at the following graph −
+
+Circuit Rank
+For the graph given in the above example, you have m=7 edges and n=5 vertices.
+
+Then the circuit rank is
+
+\begin{eqnarray}
+G = m – (n – 1)\\
+  = 7 – (5 – 1)\\
+  = 3\\
+\end{eqnarray}
+
+Example
+Let ‘G’ be a connected graph with six vertices and the degree of each vertex is three. Find the circuit rank of ‘G’.
+
+By the sum of degree of vertices theorem,
+
+n
+∑
+i=1
+ deg(Vi) = 2|E|
+6 × 3 = 2|E|
+
+|E| = 9
+
+Circuit rank = |E| – (|V| – 1)
+
+= 9 – (6 – 1) = 4
+
+\subsection{Kirchoff’s Theorem}
+Kirchoff’s theorem is useful in finding the number of spanning trees that can be formed from a connected graph.
+
+Example
+Kirchoff’s Theorem
+The matrix ‘A’ be filled as, if there is an edge between two vertices, then it should be given as ‘1’, else ‘0’.
+
+Kirchoff’s Theorem Example
+
+
+\newpage
+
+
+
+\end{document}
