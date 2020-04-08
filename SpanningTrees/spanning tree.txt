@@ -1,7 +1,0 @@
-Spanning trees
-We say that a graph H is a subgraph of a graph G if its vertices are a subset of the
-vertex set of G, its edges are a subset of the edge set of G, and each edge of H has
-the same end-vertices in G and H.
-De?nition 3.3 If H is a subgraph of G such that V (H) = V (G), then H is called a
-spanning subgraph of G. If H is a spanning subgraph which is also a tree, then H is
-said to be a spanning tree of G.
